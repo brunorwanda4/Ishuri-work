@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="icon" href="./assets//images/logo.png" type="image/x-icon">
+        
+        <!-- icons -->
+        <!-- Vendor CSS Files -->
+        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+        <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+        <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+        <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+        <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+        <link href="./output.css" rel="stylesheet">
+    </head>
+<body>
+    <header class=" flex justify-between  w-full fixed backdrop-blur h-12 border-b border-gray-500 px-2 items-center ">
+        <div class="logo">
+            <img class=" h-52 max-w-12 max-h-10 " src="./assets/images/logo.png" alt="Logo" >
+        </div>
+        <nav>
+            <ul class=" flex gap-4 ">
+                <li class=" hover:text-blue-500 duration-300 cursor-pointer"><a href="index.html"> <div class=" text-white hover:text-blue-500 duration-300 no-underline flex  gap-1" ><div class=" icon"><i class=" bi bi-house-fill "></i></div> <span class="">Home</span> </div></a></li>
+                <li class=" hover:text-blue-500 duration-300 cursor-pointer"><a class=" text-blue-500 hover:text-blue-500 duration-300 no-underline flex gap-1 " href="portfolio.html"> <div class=" icon"><i class=" bi bi-person-fill "></i></div> Portfolio</a></li>
+                <li class=" hover:text-blue-500 duration-300 cursor-pointer"><a class=" text-white hover:text-blue-500 duration-300 no-underline" href="contact.html"><i class=" bi bi-phone-fill "></i>Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class=" flex gap-2">
+            <div class=" px-2 py-1 rounded-md bg-blue-700 text-white hover:bg-blue-500 duration-300 hover:text-white">
+                <a href="login.html">Login</a>
+            </div>
+            <div class=" px-2 py-1 rounded-md bg-blue-700 text-white hover:bg-blue-500 duration-300 hover:text-white">
+                <a href="registration.html"><span class=" group-hover:text-blue-500 duration-300">Registration</span></a>
+            </div>
+        </div>
+    </header>
+    
+    <div class=" pt-12 grid place-content-center h-screen gap-4">
+        <h1 class=" title">Portfolio</h1>
+        <p class=" text-gray-500 text-center">Welcome to my portfolio Page , look want i love</p>
+        <div class=" grid grid-cols-4 gap-2 max-lg:grid-cols-2 max-md:grid-cols-1 px-3">
+            <img class=" object-cover max-h-60 max-w-60 rounded-md" src="./assets/images/image-1.jpg" alt="Your Image">
+            <img class=" object-cover max-h-60 max-w-60 rounded-md" src="./assets/images/image-2.jpg" alt="Your Image">
+            <img class=" object-cover max-h-60 max-w-60 rounded-md" src="./assets/images/image-3.jpg" alt="Your Image">
+            <img class=" object-cover max-h-60 max-w-60 rounded-md" src="./assets/images/image-4.jpg" alt="Your Image">
+        </div>
+        <p class=" text-lg text-center px-32">My name is <span>Rwanda Bruno Happyheart</span> I am in level 4 Software Development in SOS Technical High School Kagungu , I am developer for web application </p>
+        <div  class=" w-full grid place-content-center mt-4">
+            <a class=" text-center bg-blue-500 px-2 h-12 items-center w-24 justify-center flex rounded-md hover:bg-blue-600 duration-300 cursor-pointer gap-1 group" href="./contact.html"> <span class=" text-lg">Contact</span> <i class=" bi bi-arrow-right text-xl group-hover:scale-x-110 duration-300"></i></a>
+        </div>
+    </div>
+
+    <footer class=" h-8 grid place-content-center  bg-gray-900">
+        <p class=" text-gray-500">&copy; Copy right <span class=" text-white font-medium">Bruno Rwanda</span>.</p>
+    </footer>
+</body>
+</html>

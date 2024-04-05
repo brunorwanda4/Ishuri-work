@@ -1,0 +1,24 @@
+Exercise
+Please create a website that contains the following elements:
+ Create an html file with a heading, paragraph, and an
+image for the home page. It should contain a background
+image
+ When we browse the web there should the title of you
+webpage and an icon next to it.
+ create a simple horizontal navigation menu (Home,
+Portfolio, Contact Us and Login and Registration, Logo(any
+image of your choices))
+ Practice applying different text styles such as font size,
+font family, color, and text alignment using CSS.
+ Links your different Pages
+ On the Registration page and Login Page, Please include
+some form (First Name, Last Name, email, phone Number,
+Password, Gender, image uploader, submit or send
+button).
+ Please include a footer.
+ The Portfolio should contain an image of yourself and a
+description of who you are.
+ The Login and Registration should linked together
+ Please make a good design of the your web site
+
+
