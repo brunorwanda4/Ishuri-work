@@ -19,6 +19,5 @@ body {
 }
 
 .title {
-    @apply title
+    @apply text-orange-500 font-bold text-center md:text-5xl text-2xl
 }
-
