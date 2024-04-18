@@ -12,38 +12,92 @@
             /* width: 100%; */
             border-collapse: collapse;
         }
+        .table_2 , td , th {
+            border: 2px solid ;
+        }
+        .table_2 {
+            /* width: 100%; */
+            border-collapse: collapse;
+        }
     </style>
 </head>
 <body>
-    <h1>The td colspan attribute</h1>
-    <table>
-        <tr>
-            <th>Month</th>
-            <th>Savings</th>
-            <th colspan="4">Test Head 100%</th>
-        </tr>
-        <tr>
-            <td>January</td>
-            <td>$100</td>
-            <td>testX</td>
-            <td colspan="3">testY</td>
-        </tr>
-        <tr>
-            <td>MAR</td>
-            <td>$70</td>
-            <td colspan="4">test3</td>
-        </tr>
-        <tr>
-            <td>February</td>
-            <td>$80</td>
-            <td>test1</td>
-            <td>test2</td>
-            <td>test3</td>
-            <td>test4</td>
-        </tr>
-        <tr>
-            <td colspan="6">Sum: $180</td>
-        </tr>
-    </table>
+    <div style="display: flex; justify-content: center; gap: 64px;">
+       <div>
+        <table>
+            <tr>
+                <th>Month</th>
+                <th>Savings</th>
+                <th colspan="4">Test Head 100%</th>
+            </tr>
+            <tr>
+                <td>January</td>
+                <td>$100</td>
+                <td>testX</td>
+                <td colspan="3">testY</td>
+            </tr>
+            <tr>
+                <td>MAR</td>
+                <td>$70</td>
+                <td colspan="4">test3</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>$80</td>
+                <td>test1</td>
+                <td>test2</td>
+                <td>test3</td>
+                <td>test4</td>
+            </tr>
+            <tr>
+                <td colspan="6">Sum: $180</td>
+            </tr>
+        </table>
+       </div>
+       <!-- table 2 -->
+       <div>
+        <table class="table_2" border="1">
+            <tr>
+                <th colspan="6">Time Table</th>
+            </tr>
+            <tr>
+                <th rowspan="6">Hours</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+            </tr>
+            <tr>
+                <td>math</td>
+                <td>Science</td>
+                <td>math</td>
+                <td>Science</td>
+                <td>Arts</td>
+            </tr>
+            <tr>
+                <td>math</td>
+                <td>Science</td>
+                <td>math</td>
+                <td>Science</td>
+                <td>Arts</td>
+            </tr>
+            <tr>
+                <th colspan="5">Lunch</th>
+            </tr>
+            <tr>
+                <td>Math</td>
+                <td>Science</td>
+                <td>Math</td>
+                <th rowspan="2" colspan="2">Project</th>
+            </tr>
+            <tr>
+                <td>Math</td>
+                <td>Science</td>
+                <td>Math</td>
+            </tr>
+        </table>
+       </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    img {
+      height: 400px;
+      width: 400px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    #bulbImage {
+      height: 180px;
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="tablesetting.jpg" alt="" id="ourImage">
+  <br>
+  <button onclick="insertImageOne()">Image 1</button>
+  <button onclick="insertImageTwo()">Image 2</button>
+  <h1 id="ourHeading">This is Our HEADING ONE</h1>
+  <!-- <button onclick="changeText()">Change Text</button> -->
+  
+  <button onclick="turnOn()">Turn On</button>
+  <button onclick="turnOff()">Turn Off</button>
+  <img src="pic_bulboff.gif" id="bulbImage" alt="">
+
+  <input type="text" name="" placeholder="This is input" id="alertInput">
+  <button onclick="alertOurText()">Alert Text</button>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <script>
+    var x = 0;
+    var y = 10;
+    var z = 300;
+
+    // == DOM == 
+
+    function alertOurText() {
+      var inputElement = document.getElementById('alertInput');
+      var value = inputElement.value;
+      alert(value)
+
+    }
+
+    function changeText() {
+      var heading = document.getElementById('ourHeading');
+      // console.log(heading.innerHTML);
+      heading.innerHTML = "Hello World";
+    }
+
+    function insertImageOne() {
+      var imageElement = document.getElementById('ourImage');
+      imageElement.src = "tablesetting.jpg";
+      console.log(imageElement.src)
+    }
+
+    function insertImageTwo() {
+      var imageElement = document.getElementById('ourImage');
+      imageElement.src = 'tablesetting2.jpg'
+    }
+    
+    function turnOn() {
+      var bulbImageElement = document.getElementById('bulbImage');
+      bulbImageElement.src = 'pic_bulbon.gif';
+    }
+
+    function turnOff() {
+      var bulbImageElement = document.getElementById('bulbImage');
+      bulbImageElement.src = 'pic_bulboff.gif'
+    }
+
+    // == LOOPS == 
+    var index = 2;
+    var arr = ['Coman', 'cr7', 'Trossard', 'Lebron', 'Messi', 'Jude', 'Adeyemi', 'A', 'B', 'C', 'D', 'E'];
+    // console.log(arr.length)
+
+    // for (var start = 0; start < arr.length; start++) {
+    //   // console.log(start);
+    //   console.log(start, arr[start])
+    // }
+
+    // for(var i = 6; i >= 1; i--) {
+    //   let row = '';
+    //   for(var j = 1; j <= i; j++) {
+    //     row += '* ';
+    //   }
+    //   console.log(row);
+    // }
+
+    // for (var nnumber = 1; nnumber <= 100; nnumber++) {
+    //   if (nnumber % 2 != 0) {
+    //     console.log(nnumber);
+    //   }
+    // }
+
+    // var ourNumber = 10;
+    // while(ourNumber <= 5) {
+    //   console.log(ourNumber);
+    //   ourNumber++;
+    // }
+
+    // var doStartNumber = 15;
+    // do {
+    //   console.log(doStartNumber);
+    //   doStartNumber++;
+    // } while (doStartNumber <= 5);
+
+
+    // == SWITCHES == 
+
+    // switch (x) {
+    //   case 1:
+    //     console.log("X is one");
+    //     break;
+    //   case 20:
+    //     console.log("X is 20");
+    //     break;
+    //   case 80:
+    //     console.log("X is 80");
+    //     break;
+    //   default:
+    //     console.log("Default Value");
+    //     break; 
+    // }
+
+    // == IF CONDITIONS ==
+
+    // if(x > y && x > z) {
+    //   console.log("X is the greatest");
+    // } else if (y > x && y > z) {
+    //   console.log("Y is the greatest");
+    // } else {
+    //   console.log("Z is the greatest");
+    // }
+
+    // if (x > y) { 
+    //   if( x > z) {
+    //     console.log("X is the greatest");
+    //   } else {
+    //     console.log("Z is the greatest")
+    //   }
+    // } else {
+    //   if (y > z) {
+    //     console.log("Y is the greatest")
+    //   } else {
+    //     console.log("Z is the greatest")
+    //   }
+    // }
+  </script>
+</body>
+</html>

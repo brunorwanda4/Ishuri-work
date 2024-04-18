@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  box-shadow: 0 10px 30px rgba(135, 98, 98, 0.132);
+  background: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+nav a {
+  padding: 9px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  background: lightgrey;
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: url('./images/hamburger2.jpg');
+}
+
+.home h1 {
+  color: white;
+  font-size: 60px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.about {
+  border-bottom: 1px solid lightgray;
+  width: 80%;
+  margin: 0 auto;
+  padding: 70px 0;
+  display: flex;
+  gap: 40px;
+}
+
+.about h1 {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.about h2 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about p {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.menu {
+  width: 80%;
+  padding: 70px 0;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  border-bottom: 1px solid lightgray;
+}
+
+.menu h1 {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+.menu h2 {
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.menu p {
+  margin-bottom: 50px;
+}
+
+.contact {
+  width: 80%;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+
+.contact h1 {
+  font-weight: 600;
+  font-size: 29px;
+  margin-bottom: 30px;
+}
+
+.contact h2 {
+  font-weight: 600;
+  color: teal;
+}
+
+.contact p {
+  margin: 30px 0;
+}
+
+.contact form input {
+  border: none;
+  border-bottom: 1px solid lightgrey;
+  width: 100%;
+  padding: 20px 15px; 
+  margin-bottom: 20px;
+}
+
+.contact form button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.contact form button:hover {
+  background: lightgray;
+}
+
+footer {
+  padding: 50px 0;
+  text-align: center;
+  background: lightgray;
+}
+
+@media (max-width: 1166px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 1008px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+}
+
+/* HTML elements */
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+section{
+    padding-left: 8px;
+    padding-right: 8px;
+    padding: 32px 32px ;
+}
+
+body {
+    background: whitesmoke;
+}
+
+/* nav */
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 16px;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+    height: 52px;
+    backdrop-filter: filter(10px);
+    align-items: center;
+    background: #fff;
+    letter-spacing: 4px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+/* logo */
+
+.logo {
+    padding: 8px 16px;
+    /* float: left; */
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0;
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+/* nav list */
+
+header nav div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+
+}
+
+header nav div a {
+    color: #000;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.map_link {
+    background: #000;
+    color: #fff;
+    padding: 6px 10px 6px 10px;
+
+}
+
+/* home */
+
+#home {
+    padding-top: 48px;
+    background-image: url("../images/home_page.jpg");
+    background-size: 100%;
+    background-blend-mode: multiply;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* home text */
+
+#home {
+    font-size: 24px;
+}
+
+#home h2 span{
+    color: white;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+
+.bs{
+    background: rgba(0, 0, 0, 0.776);
+    color: #fff;
+    display: inline;
+    padding: 10px;
+}
+
+/* products */
+
+.products{
+    margin-bottom: 16px;
+}
+
+
+#products h2 {
+    font-weight: 400;
+    margin-bottom: 36px;
+    margin-top: 48px;
+    letter-spacing: 2px;
+}
+
+.products_div{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(2 , minmax(0, 1fr));
+    grid-row: 2;
+    gap: 24px;
+}
+
+.products_div div {
+    position: relative;
+}
+
+.products_div div span {
+    position: absolute;
+    background: #000;
+    padding: 8px 16px ;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+/* products image */
+
+.products_div img {
+    height: 200px;
+    width: 100%;
+}
+/* about */
+
+#about h2 {
+    font-weight: 400;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+#about p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+.about_div {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-row: 2;
+    gap: 20px;
+    filter: grayscale(75%);
+    position: relative;
+}
+
+.about_div div image {
+    width: 100%;
+    height: auto;
+}
+
+.about_div div span {
+    opacity: 0.60;
+}
+.about_div div h3 {
+    font-size: 24px;
+}
+
+.about_div div button {
+    display: block;
+    width: 100%;
+    user-select: none;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(225, 223, 223) ;
+}
+.about_div div button:hover {
+    color: #000;
+    background-color: #d7d5d5 ;
+}
+
+/* contact */
+.contact h2 {font-weight: 400;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    unicode-bidi: isolate;
+    gap: 16px;
+}
+
+.contact form input {
+    padding: 8px;
+    display: block;
+    border: none;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact form button {
+    color: #fff;
+    background: #000;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: inline-block;
+    cursor: pointer;
+    white-space: nowrap;
+    text-align: center;
+    padding: 8px 16px;
+    border: none;
+    width: 150px;
+}
+
+footer {
+    background: #000;
+    display: flex;
+    align-items: center;
+    color: white;
+    height: 48px;
+    justify-content: center;
+    text-transform: capitalize;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}

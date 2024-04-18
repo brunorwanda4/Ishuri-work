@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .date {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1, p {
+      font-size: 140px;
+    }
+
+    body {
+      background: cyan;
+    }
+
+    @media (max-width: 1200px) {
+      body {
+        background: red;
+      }
+    }
+
+    @media (max-width: 768px) {
+      body {
+        background: green;
+      }
+
+      .date {
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* h1, p {
+        display: none;
+      } */
+    }
+  </style>
+</head>
+<body>
+  <div class="date">
+    <h1 id="hours">12</h1>
+    <p>:</p>
+    <h1 id="minutes">56</h1>
+    <p>:</p>
+    <h1 id="seconds">23</h1>
+  </div>
+
+  <script>
+    setInterval(() => {
+      var date = new Date();
+      var hours = date.getHours();
+      var minutes = date.getMinutes();
+      var seconds = date.getSeconds();
+  
+      var hourELement = document.getElementById('hours');
+      var minutesElement = document.getElementById('minutes');
+      var secondsElement = document.getElementById('seconds');
+      hourELement.innerHTML = hours;
+      minutesElement.innerHTML = minutes
+      secondsElement.innerHTML = seconds
+    }, 1000);
+  </script>
+</body>
+</html>

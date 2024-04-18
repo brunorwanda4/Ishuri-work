@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add values</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        h2 {
+            text-transform: capitalize;
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+            gap: 32px;
+        }
+        .inputs_div {
+            display: flex;
+            gap: 20px;
+            background: rgb(228, 225, 225);
+            padding: 32px;
+            border-radius: 5px;
+            box-shadow: 2px 1px 5px rgb(180, 180, 180);
+        }
+        .inputs_div div {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .inputs_div div input {
+            height: 32px;
+            padding: 2px 4px 2px 4px;
+            border-radius: 4px;
+            border: 1px solid transparent;
+        }
+        .button {
+            background: rgb(228, 225, 225);
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            transition: 300ms;
+            cursor: pointer;
+        }
+        .button:hover {
+            background: rgb(159, 155, 155);
+        }
+        .answer {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h2 >Add input values Using javascript</h2>
+        <!-- inputs -->
+        <div class="inputs_div">
+            <div>
+                <label for="input_one">Input One</label>
+                <input value="" type="text" placeholder="Enter First value" id="input_one">
+            </div>
+            <div>
+                <label for="input_two">Input Two</label>
+                <input type="text" placeholder="Enter second value" id="input_two">
+            </div>
+        </div>
+        <p class="answer" id="answer"></p>
+        <button onclick="values()" class="button" id="add_value">
+            Add value
+        </button>
+    </div>
+
+    <!-- javascript -->
+
+    <script>
+        const inputOne = document.getElementById("input_one");
+        const inputTwo = document.getElementById("input_two");
+        const answer = document.getElementById("answer");
+        function values() {
+            const OV = inputOne.value;  
+            const TV = inputOne.value;
+            alert(OV + " " + TV)
+            answer.innerHTML = OV + " " + TV ;
+            console.log(OV + TV);
+        }
+    </script>
+</body>
+</html>

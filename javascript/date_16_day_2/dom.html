@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    img {
+      height: 300px;
+      width: 300px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <img src="tablesetting.jpg" id="foodPicture" alt="This pciture was about food">
+  <button onclick="changeImage()">Change Image</button>
+  <button onclick="changeBackImage()">Go Back to previous image</button>
+  <h1 id="randomText">Hello Word From HTML</h1>
+  <h2 id="newText">Helllo Woord From HMTL H2</h2>
+  <button onclick="randomFunction()">Click Here</button>
+
+  <br>
+  <input type="text" id="my_input" placeholder="OUR INPUT TO USE">
+  <input type="text" id="my_input" placeholder="OUR INPUT TO USE">
+  <button onclick="logInputText()">LOG INPUT TEXT</button>
+  <script>    
+    // Creating Function
+    function randomFunction() { 
+      var element = document.getElementById('randomText');
+      element.innerHTML = "jsdhsbbd";
+      console.log(element);
+      element.id = 'new_random_id';
+    }
+
+    // Creating change image function
+    function changeImage() {
+      var imageElement = document.getElementById('foodPicture');
+      console.log(imageElement)
+      imageElement.alt = "This should be our new ALT value"
+      imageElement.src = 'tablesetting2.jpg';
+    }
+
+    function changeBackImage() {
+      var imageElement = document.getElementById('foodPicture');
+      imageElement.src = 'tablesetting.jpg'
+    }
+
+    function logInputText() {
+      var inputElement = document.getElementById('my_input');
+      console.log(inputElement);
+      var inputValue = inputElement.value;
+      console.log(inputValue);
+
+      alert(inputValue);
+    }
+  </script>
+</body>
+</html>

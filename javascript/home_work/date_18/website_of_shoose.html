@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shoe Store</title>
+<link rel="stylesheet" href="assets/style/style.css">
+</head>
+<body>
+<main>
+    <div class="images">
+        <div class="big_image">
+            <img id="big-image" src="assets/images/1.jpg" alt="Shoe">
+        </div>
+        <div class="sm_image">
+            <img src="assets/images/1.jpg" alt="Shoe 1" onclick="changeImage('assets/images/1.jpg')">
+            <img src="assets/images/2.jpg" alt="Shoe 2" onclick="changeImage('assets/images/2.jpg')">
+            <img src="assets/images/3.jpg" alt="Shoe 3" onclick="changeImage('assets/images/3.jpg')">
+        </div>
+    </div>
+    <div class="description" id="description">
+        <div>
+            <img src="./assets/images/nike_icon.ico" alt="">
+            <h2>Nike shoes </h2>
+        </div>
+        <div>
+            <p>Experience unmatched comfort, style, and performance with Nike shoes, crafted to elevate your every step.</p>
+        </div>
+        <div class="amount">
+            <span class="money">100$</span>
+            <span class="pair">1<span>Pair</span></span>
+            <div class="buttons">
+                <button onclick="incrementPair()">+</button>
+                <button class="blue" onclick="decrementPair()">-</button>
+            </div>
+          </div>
+        </div>
+</main>
+<script>
+// javascript here
+function changeImage(imageSrc) {
+  document.getElementById('big-image').src = imageSrc;
+}
+
+
+// amount
+
+let pairCount = 1;
+let money = 100;
+
+function incrementPair() {
+  pairCount++;
+  money += 100; // Assuming each pair costs $100
+  updateDisplay();
+}
+
+function decrementPair() {
+  if (pairCount > 1) {
+    pairCount--;
+    money -= 100; // Assuming each pair costs $100
+    updateDisplay();
+  }
+}
+
+function updateDisplay() {
+  document.querySelector('.pair').textContent = pairCount + (pairCount > 1 ? ' Pairs' : ' Pair');
+  document.querySelector('.money').textContent = money + '$';
+}
+
+</script>
+</body>
+</html>
